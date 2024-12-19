@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0-alpha.1"></script> <!-- Tailwind CSS CDN -->
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div class="max-w-md mx-auto p-4 bg-white rounded-lg shadow-lg mt-8">
+    <h1 class="text-3xl font-semibold text-center mb-4 text-gray-700">Todo App</h1>
+    
+    <!-- Todo Form -->
+    <form id="todo-form" class="mb-4">
+      <input type="text" id="todo-input" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter a todo" required>
+      <button type="submit" class="mt-2 w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600">Add Todo</button>
+    </form>
+
+    <!-- Todo List -->
+    <ul id="todo-list" class="space-y-3">
+    </ul>
+  </div>
+
+</body>
+</html>
